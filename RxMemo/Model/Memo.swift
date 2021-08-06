@@ -6,13 +6,21 @@
 //
 
 import Foundation
+import RxDataSources
 
 
 
-struct Memo: Equatable {
+
+
+
+
+struct Memo: Equatable, IdentifiableType {
     var content: String
     var insertDate: Date
+    
     var identity: String
+    
+    
     init(content: String, insertDate: Date = Date()) {
         self.content = content
         self.insertDate = insertDate

@@ -53,7 +53,9 @@ class MemoDetailViewController: UIViewController, ViewModelBindableType {
             }
             .disposed(by: rx.disposeBag)
         
-        editButton.rx.action = viewModel.maekEditAction()
+        editButton.rx.action = viewModel.makeEditAction()
+        
+        deletebutton.rx.action = viewModel.makeDeleteAction()
         
         
         shareButton.rx.tap
@@ -68,7 +70,8 @@ class MemoDetailViewController: UIViewController, ViewModelBindableType {
                 
             } )
             .disposed(by: rx.disposeBag)
-        
-
     }
 }
+
+
+
