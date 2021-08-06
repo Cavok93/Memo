@@ -45,6 +45,9 @@ class MemoListViewController: UIViewController, ViewModelBindableType {
             .disposed(by: rx.disposeBag
             
             )
+        
+        
+        addButton.rx.action = viewModel.makeCreateAction()
     }
 
 }
