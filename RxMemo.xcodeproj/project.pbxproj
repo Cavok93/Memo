@@ -27,6 +27,7 @@
 		23D3F71826BD0CA20000760A /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D3F71726BD0CA20000760A /* Scene.swift */; };
 		23D3F71A26BD0FFF0000760A /* SceneCoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D3F71926BD0FFF0000760A /* SceneCoordinatorType.swift */; };
 		23D3F71C26BD15610000760A /* SceneCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D3F71B26BD15610000760A /* SceneCoordinator.swift */; };
+		23D3F71E26BD1B6A0000760A /* CommonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D3F71D26BD1B6A0000760A /* CommonViewModel.swift */; };
 		3F0C0EAA8C96B71B60ACAFDD /* Pods_RxMemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED20B0F6EF0AD7506A5F52A /* Pods_RxMemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		23D3F71726BD0CA20000760A /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
 		23D3F71926BD0FFF0000760A /* SceneCoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinatorType.swift; sourceTree = "<group>"; };
 		23D3F71B26BD15610000760A /* SceneCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinator.swift; sourceTree = "<group>"; };
+		23D3F71D26BD1B6A0000760A /* CommonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonViewModel.swift; sourceTree = "<group>"; };
 		53A99981F6473D009F87D717 /* Pods-RxMemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxMemo.release.xcconfig"; path = "Target Support Files/Pods-RxMemo/Pods-RxMemo.release.xcconfig"; sourceTree = "<group>"; };
 		DED20B0F6EF0AD7506A5F52A /* Pods_RxMemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxMemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -131,6 +133,7 @@
 				23D3F70D26BD08DE0000760A /* MemoListViewModel.swift */,
 				23D3F70F26BD090C0000760A /* MemoDetailViewModel.swift */,
 				23D3F71126BD092E0000760A /* MemoComposeViewModel.swift */,
+				23D3F71D26BD1B6A0000760A /* CommonViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 				23D3F71A26BD0FFF0000760A /* SceneCoordinatorType.swift in Sources */,
 				23D3F70E26BD08DE0000760A /* MemoListViewModel.swift in Sources */,
 				23D3F71026BD090C0000760A /* MemoDetailViewModel.swift in Sources */,
+				23D3F71E26BD1B6A0000760A /* CommonViewModel.swift in Sources */,
 				23D3F71626BD0C4A0000760A /* TransitionModel.swift in Sources */,
 				23D3F70826BD074A0000760A /* MemoListViewController.swift in Sources */,
 				23D3F70C26BD079F0000760A /* MemoComposeViewController.swift in Sources */,
