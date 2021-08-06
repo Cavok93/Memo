@@ -39,7 +39,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="erP-fJ-mj3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2087" y="-875"/>
+            <point key="canvasLocation" x="3671" y="-881"/>
         </scene>
         <!--메모 목록-->
         <scene sceneID="Q1S-zE-tgB">
@@ -48,11 +48,48 @@
                     <view key="view" contentMode="scaleToFill" id="sJd-mi-XNz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="O93-pF-hsQ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" textLabel="iyQ-rb-6b1" style="IBUITableViewCellStyleDefault" id="n4G-gY-MbM">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="n4G-gY-MbM" id="otj-cD-0ob">
+                                            <rect key="frame" x="0.0" y="0.0" width="384.5" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="iyQ-rb-6b1">
+                                                    <rect key="frame" x="20" y="0.0" width="356.5" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="jUQ-XK-0zk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="O93-pF-hsQ" secondAttribute="bottom" id="6vJ-UU-AMq"/>
+                            <constraint firstItem="O93-pF-hsQ" firstAttribute="leading" secondItem="jUQ-XK-0zk" secondAttribute="leading" id="TH8-1G-HBN"/>
+                            <constraint firstItem="O93-pF-hsQ" firstAttribute="top" secondItem="sJd-mi-XNz" secondAttribute="top" id="xva-LK-FzU"/>
+                            <constraint firstItem="O93-pF-hsQ" firstAttribute="trailing" secondItem="jUQ-XK-0zk" secondAttribute="trailing" id="zG6-7u-Bo1"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="메모 목록" id="IqD-Y3-6ug"/>
+                    <navigationItem key="navigationItem" title="메모 목록" id="IqD-Y3-6ug">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="AlW-Lc-65n"/>
+                    </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="addButton" destination="AlW-Lc-65n" id="Zf4-q4-dED"/>
+                        <outlet property="listTableView" destination="O93-pF-hsQ" id="H6E-zH-lkn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eHO-gy-787" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -109,7 +146,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="raV-fn-uFq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1064" y="-875"/>
+            <point key="canvasLocation" x="2648" y="-881"/>
         </scene>
     </scenes>
     <resources>

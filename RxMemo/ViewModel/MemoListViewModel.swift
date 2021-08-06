@@ -19,4 +19,5 @@ class MemoListViewModel: CommonViewModel {
     
     
     
+    
 }
